@@ -1,13 +1,9 @@
 .textfields {
   background-color: grey;
 }
-#heading {
-font-weight: bold;
+
+.heading {
+font-weight: bolder;
+text-align: center;
 }
 
-p {
-  margin-left: 3rem;
-}
-input {
-  width: 100;
-}

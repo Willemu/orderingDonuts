@@ -2,20 +2,34 @@
 
 <form action="index.php"method="post">
      
-    <label for="name">First Name</label>
+    <label for="name">Username (required)</label>
     <input type="text"name="name">
 
-    <label for="lastName">Last Name</label>
-    <input type="text"name="lastName">
+    <label for="mobileNumber">Mobile number</label>
+    <input type="text"name="mobileNumber">
 
     <input type="submit">
 
 </form>
 
-<?php } else {
+<?php } 
+// if user does not enter username execute the following
 
-  $firstName = $_POST['name'];
-  $lastName = $_POST['lastName'];
-  echo "<p>Hello $firstName $lastName what would you like to do next?</p>";
-}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "A username is a required field";
+    echo "<p>Hello, please enter your username. $nameErr</p>";
+  }
 
+
+// so if user enters all their info execute the following
+  else {
+
+  
+  $userName = $_POST['name'];
+  $mobileNumber = $_POST['mobileNumber'];
+  echo "<p>Hello $userName what would you like to do next?</p>";
+
+  }
+   
+}   
