@@ -1,6 +1,12 @@
 .heading {
-font-weight: bolder;
+font-weight: bold;
 text-align: center;
+padding: 20px;
+margin: 20px;
+}
+
+.logo {
+  text-align: left;
 }
 
 .pagebody {

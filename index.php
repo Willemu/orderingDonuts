@@ -15,6 +15,7 @@
 	
 <header class="heading">
 		<p> Welcome to Dropping Donuts</p>
+		<img src="images/logo.png" alt="Logo" width="200" height="200" class="logo">
 </header>
 	
 	
@@ -36,6 +37,7 @@
 			<option value="vanilla">Vanilla</option>
 			<option value="strawberry">Strawberry</option>
 		</select>
+		<img src="images/chocolatedonut.png" alt="chocolate donut" width="200" height="200" class="donutpic1">
 		<br>
 		<label for="size">Choose the Size:</label>
 		<input type="radio" id="small" name="size" value="Small" required>
