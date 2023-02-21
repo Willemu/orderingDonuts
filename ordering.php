@@ -2,9 +2,9 @@
 <html>
 <head>
 	<title>Cake Order System</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="/css.css">
 </head>
-<body>
+<body class="ordersummary">
 
 <?php 
 // if user does not enter username execute the following
@@ -23,18 +23,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $userName = $_POST['name'];
   $mobileNumber = $_POST['mobileNumber'];
   $email = $_POST["email"];
-  $cake = $_POST["cake"];
+  $donut = $_POST["donut"];
 	$size = $_POST["size"];
 	$delivery = $_POST["delivery"];
 
   echo "<h1>Order Summary</h1>";
-		echo "<p>Name: " . $name . "</p>";
+		echo "<p>Name: " . $userName . "</p>";
 		echo "<p>Email: " . $email . "</p>";
-		echo "<p>Phone: " . $phone . "</p>";
-		echo "<p>Cake: " . $cake . "</p>";
+		echo "<p>Phone: " . $mobileNumber . "</p>";
+		echo "<p>Donuts: " . $donut . "</p>";
 		echo "<p>Size: " . $size . "</p>";
 		echo "<p>Delivery: " . $delivery . "</p>";  
-  echo "<p>Hello $userName what would you like to do next?</p>";
+  echo "<p>Hello $userName , your order is on it's way, we will call you when it is ready!</p>";
 
   }
    

@@ -1,18 +1,17 @@
-.textfields {
-  background-color: grey;
-}
-
 .heading {
 font-weight: bolder;
 text-align: center;
 }
 
-/*-- example css
+.pagebody {
+  background-color: lightcyan;
+}
 
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+  
 }
 
 h1 {
@@ -31,4 +30,12 @@ label {
 	margin-top: 10px;
 }
 
-input[type=text], input[type=email], input[type=tel], select
+.ordersummary {
+  background-color: lightcyan;
+}
+
+input[type=text], input[type=email], input[type=tel], select {
+  font-size: 16px;
+  border: 1px solid pink;
+  display: block;
+}

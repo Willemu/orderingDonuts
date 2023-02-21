@@ -18,7 +18,7 @@
 </header>
 	
 	
-<body class="textfields">
+<body class="pagebody">
 <h1>Order your Donuts</h1>
 	<form action="ordering.php" method="post">
 		<label for="name">Username</label>
@@ -29,28 +29,30 @@
 
 		<label for="mobileNumber">Mobile Number:</label>
 		<input type="tel" id="mobileNumber" name="mobileNumber" required>
-
-		<label for="cake">Cake:</label>
-		<select id="cake" name="cake" required>
-			<option value="chocolate">Chocolate Cake</option>
-			<option value="vanilla">Vanilla Cake</option>
-			<option value="strawberry">Strawberry Cake</option>
+		<br>
+		<label for="donut">Choose your Donut:</label>
+		<select id="donut" name="donut" required>
+			<option value="chocolate">Chocolate</option>
+			<option value="vanilla">Vanilla</option>
+			<option value="strawberry">Strawberry</option>
 		</select>
-
-		<label for="size">Size:</label>
-		<input type="radio" id="small" name="size" value="small" required>
+		<br>
+		<label for="size">Choose the Size:</label>
+		<input type="radio" id="small" name="size" value="Small" required>
 		<label for="small">Small</label>
-		<input type="radio" id="medium" name="size" value="medium">
+		<input type="radio" id="medium" name="size" value="Medium">
 		<label for="medium">Medium</label>
-		<input type="radio" id="large" name="size" value="large">
+		<input type="radio" id="large" name="size" value="Large">
 		<label for="large">Large</label>
-
-		<label for="delivery">Delivery:</label>
-		<input type="radio" id="yes" name="delivery" value="yes" required>
+			<br>
+			<br>
+		<label for="delivery">Collection:</label>
+		<input type="radio" id="yes" name="delivery" value="Yes" required>
 		<label for="yes">Yes</label>
-		<input type="radio" id="no" name="delivery" value="no">
+		<input type="radio" id="no" name="delivery" value="No">
 		<label for="no">No</label>
-
+			<br>
+			<br>
 		<input type="submit" value="Submit">
 	</form>
 			
