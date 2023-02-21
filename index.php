@@ -2,7 +2,7 @@
  
  <html lang="en">
  
-	<head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8"/>    
 	<link rel="stylesheet" type="text/css" href="/css.css">
@@ -10,22 +10,50 @@
 	
         <title>Dropping Donuts</title>
 		
-    </head>
+</head>
 
-	<header class="heading">
+	
+<header class="heading">
 		<p> Welcome to Dropping Donuts</p>
-	</header>
+</header>
 	
-	<body class="textfields">
 	
-	<!--link the index php to the ordering php-->
+<body class="textfields">
+<h1>Order your Donuts</h1>
+	<form action="ordering.php" method="post">
+		<label for="name">Username</label>
+		<input type="text" id="name" name="name" required>
 
-        <?php
-		include ("ordering.php");
-		?>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
 
-		
-		
+		<label for="mobileNumber">Mobile Number:</label>
+		<input type="tel" id="mobileNumber" name="mobileNumber" required>
+
+		<label for="cake">Cake:</label>
+		<select id="cake" name="cake" required>
+			<option value="chocolate">Chocolate Cake</option>
+			<option value="vanilla">Vanilla Cake</option>
+			<option value="strawberry">Strawberry Cake</option>
+		</select>
+
+		<label for="size">Size:</label>
+		<input type="radio" id="small" name="size" value="small" required>
+		<label for="small">Small</label>
+		<input type="radio" id="medium" name="size" value="medium">
+		<label for="medium">Medium</label>
+		<input type="radio" id="large" name="size" value="large">
+		<label for="large">Large</label>
+
+		<label for="delivery">Delivery:</label>
+		<input type="radio" id="yes" name="delivery" value="yes" required>
+		<label for="yes">Yes</label>
+		<input type="radio" id="no" name="delivery" value="no">
+		<label for="no">No</label>
+
+		<input type="submit" value="Submit">
+	</form>
+			
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>	
        <script src="js/bootstrap.min.js"></Script>
 	</body>

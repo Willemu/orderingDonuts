@@ -1,18 +1,12 @@
-<?php if(!$_POST){ ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cake Order System</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
 
-<form action="index.php"method="post">
-     
-    <label for="name">Username (required)</label>
-    <input type="text"name="name">
-
-    <label for="mobileNumber">Mobile number</label>
-    <input type="text"name="mobileNumber">
-
-    <input type="submit">
-
-</form>
-
-<?php } 
+<?php 
 // if user does not enter username execute the following
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -28,8 +22,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
   $userName = $_POST['name'];
   $mobileNumber = $_POST['mobileNumber'];
+  $email = $_POST["email"];
+  $cake = $_POST["cake"];
+	$size = $_POST["size"];
+	$delivery = $_POST["delivery"];
+
+  echo "<h1>Order Summary</h1>";
+		echo "<p>Name: " . $name . "</p>";
+		echo "<p>Email: " . $email . "</p>";
+		echo "<p>Phone: " . $phone . "</p>";
+		echo "<p>Cake: " . $cake . "</p>";
+		echo "<p>Size: " . $size . "</p>";
+		echo "<p>Delivery: " . $delivery . "</p>";  
   echo "<p>Hello $userName what would you like to do next?</p>";
 
   }
    
-}   
+} 
+
+	?>
+</body>
+</html>
