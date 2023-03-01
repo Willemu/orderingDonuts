@@ -40,10 +40,9 @@
             <
 		</select>
 
-			<label for="quantity">Quantity:</label>
-            <input type="text" name="quantity" id="quantity" required>
-
-		
+			<label for="numdonuts">Quantity:</label>
+            <input type="text" name="numdonuts" id="numdonuts" required>
+			
 
 		<label for="toppings">Choose your Toppings:</label>
 
@@ -62,13 +61,10 @@
 
 		<br>
 
-		<label for="quantity">Quantity:</label>
-  		<input type="text" name="quantity" id="quantity" required>
+		<label for="numtoppings">Quantity:</label>
+  		<input type="text" name="numtoppings" id="numtoppings" required>
 
-  		<label for="price">Price:</label>
-  		<input type="text" name="price" id="price" required>
-
-		<br>
+  		<br>
 		<br>
 			
 		<label for="filling">Filling:</label>
@@ -84,12 +80,10 @@
 		<label for="no">Strawberry</label>
 		<br>
 
-		<label for="quantity">Quantity:</label>
-  		<input type="text" name="quantity" id="quantity" required>
+		<label for="numfilling">Quantity:</label>
+  		<input type="text" name="numfilling" id="numfilling" required>
 
-  		<label for="price">Price:</label>
-  		<input type="text" name="price" id="price" required>
-			<br>
+  			<br>
 			<br>
 		<input type="submit" value="Submit">
 
