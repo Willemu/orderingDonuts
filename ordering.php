@@ -24,16 +24,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $mobileNumber = $_POST['mobileNumber'];
   $email = $_POST["email"];
   $donut = $_POST["donut"];
-	$size = $_POST["size"];
-	$delivery = $_POST["delivery"];
+	$toppings = $_POST["toppings"];
+	$filling = $_POST["filling"];
 
   echo "<h1>Order Summary</h1>";
 		echo "<p>Name: " . $userName . "</p>";
 		echo "<p>Email: " . $email . "</p>";
 		echo "<p>Phone: " . $mobileNumber . "</p>";
 		echo "<p>Donuts: " . $donut . "</p>";
-		echo "<p>Size: " . $size . "</p>";
-		echo "<p>Delivery: " . $delivery . "</p>";  
+		echo "<p>Toppings: " . $toppings . "</p>";
+		echo "<p>Filling: " . $filling . "</p>";  
   echo "<p>Hello $userName , your order is on it's way, we will call you when it is ready!</p>";
 
   }

@@ -33,29 +33,40 @@
 		<br>
 		<label for="donut">Choose your Donut:</label>
 		<select id="donut" name="donut" required>
+		    <option value="plain">Plain</option>
 			<option value="chocolate">Chocolate</option>
 			<option value="vanilla">Vanilla</option>
-			<option value="strawberry">Strawberry</option>
+            <
 		</select>
-		<img src="images/chocolatedonut.png" alt="chocolate donut" width="200" height="200" class="donutpic1">
-		<br>
-		<label for="size">Choose the Size:</label>
-		<input type="radio" id="small" name="size" value="Small" required>
+
+			<label for="price" id="price" value="4">Price:</label>
+        	<p>The standard price for our plain donut is R4, an additional R2 is added for any other type of glazing. Maximum of 1 glazing per donut</p>
+
+			<label for="quantity">Quantity:</label>
+            <input type="text" name="quantity" id="quantity" required>
+
+		
+
+		<label for="toppings">Choose your Toppings:</label>
+		<input type="radio" id="small" name="toppings" value="Small" required>
 		<label for="small">Small</label>
-		<input type="radio" id="medium" name="size" value="Medium">
+		<input type="radio" id="medium" name="toppings" value="Medium">
 		<label for="medium">Medium</label>
-		<input type="radio" id="large" name="size" value="Large">
+		<input type="radio" id="large" name="toppings" value="Large">
 		<label for="large">Large</label>
 			<br>
 			<br>
-		<label for="delivery">Collection:</label>
-		<input type="radio" id="yes" name="delivery" value="Yes" required>
+		<label for="filling">Filling:</label>
+		<input type="radio" id="yes" name="filling" value="Yes" required>
 		<label for="yes">Yes</label>
-		<input type="radio" id="no" name="delivery" value="No">
+		<input type="radio" id="no" name="filling" value="No">
 		<label for="no">No</label>
 			<br>
 			<br>
 		<input type="submit" value="Submit">
+
+		<img src="images/chocolatedonut.png" alt="chocolate donut" width="200" height="200" class="donutpic1">
+		<br>
 	</form>
 			
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>	
