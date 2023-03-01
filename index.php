@@ -32,6 +32,7 @@
 		<input type="tel" id="mobileNumber" name="mobileNumber" required>
 		<br>
 		<label for="donut">Choose your Donut:</label>
+		<p>The standard price for the plain donut is R4, for any other glazing add R2</p>
 		<select id="donut" name="donut" required>
 		    <option value="plain">Plain</option>
 			<option value="chocolate">Chocolate</option>
@@ -39,28 +40,55 @@
             <
 		</select>
 
-			<label for="price" id="price" value="4">Price:</label>
-        	<p>The standard price for our plain donut is R4, an additional R2 is added for any other type of glazing. Maximum of 1 glazing per donut</p>
-
 			<label for="quantity">Quantity:</label>
             <input type="text" name="quantity" id="quantity" required>
 
 		
 
 		<label for="toppings">Choose your Toppings:</label>
-		<input type="radio" id="small" name="toppings" value="Small" required>
-		<label for="small">Small</label>
-		<input type="radio" id="medium" name="toppings" value="Medium">
-		<label for="medium">Medium</label>
-		<input type="radio" id="large" name="toppings" value="Large">
-		<label for="large">Large</label>
-			<br>
-			<br>
+
+		<p>The standard price for each topping is R2, a maximum of 3 toppings per donut</p>
+		<input type="radio" id="barone" name="toppings" value="barone" required>
+		<label for="small">BarOne</label>
+
+		<input type="radio" id="hundrethousands" name="toppings" value="hundrethousands">
+		<label for="medium">Hundrethousands</label>
+
+		<input type="radio" id="almonds" name="toppings" value="almonds">
+		<label for="large">Almonds</label>
+
+		<input type="radio" id="smarties" name="toppings" value="smarties">
+		<label for="large">Smarties</label>
+
+		<br>
+
+		<label for="quantity">Quantity:</label>
+  		<input type="text" name="quantity" id="quantity" required>
+
+  		<label for="price">Price:</label>
+  		<input type="text" name="price" id="price" required>
+
+		<br>
+		<br>
+			
 		<label for="filling">Filling:</label>
-		<input type="radio" id="yes" name="filling" value="Yes" required>
-		<label for="yes">Yes</label>
-		<input type="radio" id="no" name="filling" value="No">
-		<label for="no">No</label>
+
+		<p>The standard price for a filling is R2, a maximum of 1 filling per donut</p>
+		<input type="radio" id="none" name="filling" value="none" required>
+		<label for="yes">None</label>
+		<input type="radio" id="cream" name="filling" value="cream">
+		<label for="no">Cream</label>
+		<input type="radio" id="appricot" name="filling" value="appricot">
+		<label for="no">Appricot</label>
+		<input type="radio" id="strawberry" name="filling" value="strawberry">
+		<label for="no">Strawberry</label>
+		<br>
+
+		<label for="quantity">Quantity:</label>
+  		<input type="text" name="quantity" id="quantity" required>
+
+  		<label for="price">Price:</label>
+  		<input type="text" name="price" id="price" required>
 			<br>
 			<br>
 		<input type="submit" value="Submit">
