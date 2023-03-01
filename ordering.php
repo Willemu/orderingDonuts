@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // so if user enters all their info execute the following
   else {
 
-  
+ // declares user inputs 
   $userName = $_POST['name'];
   $mobileNumber = $_POST['mobileNumber'];
   $email = $_POST["email"];
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
   
-
+// tell the system what to show on the check out page
   echo "<h1>Order Summary</h1>";
 		echo "<p>Name: " . $userName . "</p>";
 		echo "<p>Email: " . $email . "</p>";
