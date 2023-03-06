@@ -12,15 +12,16 @@
 		
 </head>
 
-	
+<!-- Created and added a logo for the donut shop-->	
 <header class="heading">
 		<p> Welcome to Dropping Donuts</p>
 		<img src="images/logo.png" alt="Logo" width="200" height="200" class="logo">
 </header>
 	
-	
+<!-- using html created the input form where the user will add their info and select their dounuts-->		
 <body class="pagebody">
 <h1>Order your Donuts</h1>
+<!-- link the ordering.php to the html so that the system know what to output. Using the post method-->!
 	<form action="ordering.php" method="post">
 		<label for="name">Username</label>
 		<input type="text" id="name" name="name" required>

@@ -1,3 +1,5 @@
+/* style the heading*/
+
 .heading {
 font-weight: bold;
 text-align: center;
@@ -5,10 +7,12 @@ padding: 20px;
 margin: 20px;
 }
 
+/* add the logo and position it accordingly*/
 .logo {
   text-align: left;
 }
 
+/* style the body and add some color to break from the plain white*/
 .pagebody {
   background-color: lightcyan;
 }
@@ -39,7 +43,7 @@ label {
 .ordersummary {
   background-color: lightcyan;
 }
-
+/* style the boxes and add an internal pink line into the boxes*/
 input[type=text], input[type=email], input[type=tel], select {
   font-size: 16px;
   border: 1px solid pink;
