@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   //adding the default price
   $default_pricedonuts = 4;
   $toppings = $_POST["toppings"];
-  $numbarone = $_POST['barone'];
+  $numbarone = $_POST['1'];
   $numhundrethousands = $_POST["hundrethousands"];
   $numalmonds = $_POST["almonds"];
   $numsmaties = $_POST["smarties"];
