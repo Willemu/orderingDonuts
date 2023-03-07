@@ -42,6 +42,7 @@ label {
 
 .ordersummary {
   background-color: lightcyan;
+  text-align: center;
 }
 /* style the boxes and add an internal pink line into the boxes*/
 input[type=text], input[type=email], input[type=tel], select {

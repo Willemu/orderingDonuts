@@ -7,13 +7,19 @@
 <body class="ordersummary">
 
 <?php 
-// if user does not enter username execute the following
+// if user selects more than 3 toppings execute the following
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "A username is a required field";
-    echo "<p>Hello, please enter your username. $nameErr</p>";
+// Define the allowed choices
+if (isset($_POST['submit'])) {
+  // Get the selected items and limit to a maximum of 3
+  $selectedToppings = array_slice($_POST['toppings'], 0, 3);
+  
+  // Print the selected items
+  echo "Selected toppings: ";
+  foreach ($selectedToppings as $toppings) {
+      echo $toppings . " ";
   }
+}
 
 
 // so if user enters all their info execute the following
@@ -67,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   }
    
-} 
+ 
 
 	?>
 </body>
