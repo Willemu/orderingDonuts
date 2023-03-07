@@ -45,19 +45,19 @@
             <input type="text" name="numdonuts" id="numdonuts" required>
 			
 
-		<label for="toppings[]">Choose your Toppings:</label>
+		<label for="toppings">Choose your Toppings:</label>
 
 		<p>The standard price for each topping is R2, a maximum of 3 toppings per donut</p>
-		<input type="checkbox" id="barone" name="toppings[]" value="barone">
+		<input type="checkbox" id="barone" name="toppings" value="barone">
 		<label for="small">BarOne</label>
 
-		<input type="checkbox" id="hundrethousands" name="toppings[]" value="hundrethousands">
+		<input type="checkbox" id="hundrethousands" name="toppings" value="hundrethousands">
 		<label for="medium">Hundrethousands</label>
 
-		<input type="checkbox" id="almonds" name="toppings[]" value="almonds">
+		<input type="checkbox" id="almonds" name="toppings" value="almonds">
 		<label for="large">Almonds</label>
 
-		<input type="checkbox" id="smarties" name="toppings[]" value="smarties">
+		<input type="checkbox" id="smarties" name="toppings" value="smarties">
 		<label for="large">Smarties</label>
 
 		
