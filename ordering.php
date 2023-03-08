@@ -20,27 +20,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   //adding the default price
   $default_pricedonuts = 4;
   $toppings = $_POST["toppings"];
-  $numbarone = $_POST['1'];
-  $numhundrethousands = $_POST["hundrethousands"];
-  $numalmonds = $_POST["almonds"];
-  $numsmaties = $_POST["smarties"];
-  $pricebarone = 2.00;
-  $pricehundrethousands = 2.00;
-  $pricealmonds = 2.00;
-  $pricesmaties = 2.00;
-  $filling = $_POST["filling"];
-  $numnone = $_POST["none"];
-  $numcream = $_POST["cream"];
-  $numappricot = $_POST["appricot"];
-  $numstrawberry = $_POST["strawberry"];
-  $pricenone = 0.00;
-  $pricecream = 2.00;
-  $priceappricot = 2.00;
-  $pricestrawberry = 2.00;
+  $numtoppings = $_POST["numtoppings"];
+  $default_pricetoppings = 2;
+	$filling = $_POST["filling"];
+  $numfilling = $_POST["numfilling"];
+  $default_pricefilling = 2;
+  $pricedonuts = $default_pricedonuts * $numdonuts;
+  $pricetoppings = $default_pricetoppings * $numtoppings;
+  $pricefilling = $default_pricefilling * $numfilling;
+  $total = $pricedonuts + $pricetoppings + $pricefilling;
   //calculation to get to the final price by starting with the base price per donut multiplied by the number of donuts
   $pricedonuts = $default_pricedonuts * $numdonuts;
   //calculating the price for the toppings
-  $pricetoppings = ($numbarone4 * $pricebarone) + ($numhundrethousands * $pricehundrethousands);
+  $pricetoppings = $default_pricetoppings * $numtoppings;
   //calculating the price for the filling
   $pricefilling = $default_pricefilling * $numfilling;
   //calculate the total cost by then adding the 3 categories together as a simple sum

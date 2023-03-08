@@ -48,36 +48,46 @@
 		<label for="toppings">Choose your Toppings:</label>
 
 		<p>The standard price for each topping is R2, a maximum of 3 toppings per donut</p>
-		<input type="checkbox" id="barone" name="toppings" value="barone">
-		<label for="small">BarOne</label>
+		
+		<input type="checkbox" id="barone" name="toppings" value="2">
+		<label for="barone">BarOne</label>
 
-		<input type="checkbox" id="hundrethousands" name="toppings" value="hundrethousands">
-		<label for="medium">Hundrethousands</label>
+		<input type="checkbox" id="hundrethousands" name="toppings" value="2">
+		<label for="hundrethousands">Hundrethousands</label>
 
 		<input type="checkbox" id="almonds" name="toppings" value="almonds">
-		<label for="large">Almonds</label>
+		<label for="almonds">Almonds</label>
 
 		<input type="checkbox" id="smarties" name="toppings" value="smarties">
-		<label for="large">Smarties</label>
+		<label for="smarties">Smarties</label>
 
+		<br>
+
+		<label for="numtoppings">Quantity:</label>
+        <input type="text" name="numtoppings" id="numtoppings" required>
 		
-  		<br>
 		<br>
 			
 		<label for="filling">Select your filling:</label>
 
+		<p>The standard price for a filling is R2, a maximum of 1 filling per donut</p>
+		
+		<input type="checkbox" id="none" name="filling" value="none">
+		<label for="none">None</label>
+		<input type="checkbox" id="cream" name="filling" value="cream">
+		<label for="cream">Cream</label>
+		<input type="checkbox" id="appricot" name="filling" value="appricot">
+		<label for="appricot">Appricot</label>
+		<input type="checkbox" id="strawberry" name="filling" value="strawberry">
+		<label for="strawberry">Strawberry</label>
+
 		<br>
 
-		<p>The standard price for a filling is R2, a maximum of 1 filling per donut</p>
-		<input type="checkbox" id="none" name="filling" value="none">
-		<label for="yes">None</label>
-		<input type="checkbox" id="cream" name="filling" value="cream">
-		<label for="no">Cream</label>
-		<input type="checkbox" id="appricot" name="filling" value="appricot">
-		<label for="no">Appricot</label>
-		<input type="checkbox" id="strawberry" name="filling" value="strawberry">
-		<label for="no">Strawberry</label>
-		<br>
+		<label for="numfilling">Quantity:</label>
+        <input type="text" name="numfilling" id="numfilling" required>
+		
+
+		
 
 			<br>
 			<br>
