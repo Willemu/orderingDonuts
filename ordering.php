@@ -39,6 +39,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $total = $pricedonuts + $pricetoppings + $pricefilling;
     }
 
+ //function to add cost of chocolate and vanilla to final price   
+function calcPriceofDonut ($donut,$pricedonuts, $numdonuts) {
+
+  if ($donut != "chocolate") {
+    $pricedonuts += 2.0 * $numdonuts;
+  }
+return $pricedonuts;
+}
+
+
+
+
 
 // tell the system what to show on the check out page
   echo "<h1>Order Summary</h1>";
