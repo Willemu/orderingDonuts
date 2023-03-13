@@ -48,10 +48,6 @@ function calcPriceofDonut ($donut,$pricedonuts, $numdonuts) {
 return $pricedonuts;
 }
 
-
-
-
-
 // tell the system what to show on the check out page
   echo "<h1>Order Summary</h1>";
 		echo "<p>Name: " . $userName . "</p>";
@@ -69,10 +65,6 @@ return $pricedonuts;
     // out the message that includes the username and total owed
   echo "<p>Hello $userName , your order total is R $total, we will call you when it is ready!</p>";
 
-  
-   
- 
-
-	?>
+?>
 </body>
 </html>
